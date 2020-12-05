@@ -1,0 +1,391 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Powur Energy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPlayfair+Display:400,700">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+</head>
+
+<body id="home">
+    <div class="ie-panel"><a href="https://windows.microsoft.com/en-US/internet-explorer/"></a>
+    </div>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Cargando...</p>
+        </div>
+    </div>
+    <div class="page">
+        <!-- Page Header-->
+        <header class="section page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-aside" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                    data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed"
+                    data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static"
+                    data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static"
+                    data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px"
+                    data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle d-lg-none d-block"
+                                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand"><a href="{% url 'index' %}"><img class="brand-logo-light"
+                                            src="{% static 'images/logo-inverse-138-59.png' %}" alt="" /></a></div>
+                                <div class="block-right">
+                                    <ul class="list-inline nav-list">
+                                        <li class="list-inline-item"><a href="#home">Home</a>
+                                        <li class="list-inline-item"><a href="#about">Sobre nosotros</a></li>
+                                        <li class="list-inline-item"><a href="#panels">Paneles</a></li>
+                                        <li class="list-inline-item"><a href="#gallery">Gallery</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#about">Sobre nosotros</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#panels">Paneles</a></li>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#gallery">Gallery</a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Swiper-->
+        <section class="section section-lg section-main-bunner section-main-bunner-filter">
+            <div class="main-bunner-img"
+                style="background-image: url({% static 'images/bg-home.jpg' %}); background-size: cover;">
+            </div>
+            <div class="main-bunner-inner">
+                <div class="container">
+                    <div class="row row-50 justify-content-lg-center align-items-lg-center">
+                        <div class="col-lg-12">
+                            <div class="bunner-content-modern text-center">
+                                <h1>Los mejores paneles solares del mercado</h1>
+                                <div class="star-section offset-top-60">
+                                    <i class="icon-stars fas fa-star"></i>
+                                    <i class="icon-stars fas fa-star"></i>
+                                    <i class="icon-stars fas fa-star"></i>
+                                    <i class="icon-stars fas fa-star"></i>
+                                    <i class="icon-stars fas fa-star"></i>
+                                </div>
+                                <p>
+                                    Powur energy te ofrece paneles solares para que simplemente pagues mensualmente por
+                                    la energía que consumen sus equipos eléctricos, lo que le permite obtener un consumo
+                                    eléctrico
+                                    mucho más bajo y ahorrar más dinero en facturas, para más información dejanos tus
+                                    datos en el formulario que se encuentra a continuación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-transform-top bg-gray-light">
+            <div class="container">
+                <div class="box-countdown-dark">
+                    <form method="POST" id="form">
+                        <div
+                            class="row row-30 justify-content-xl-between justify-content-start align-content-lg-center align-content-start">
+                            <div class="col-xl-12 text-md-left text-center">
+                                <div class="mb-3">
+                                    {% for message in messages %}
+                                    <span
+                                        style="{% if message.tags == 'success' %} color: green; {% else %} color: red; {% endif %}"
+                                        id="message-form">{{ message | safe }}</span>
+                                    {% endfor %}
+                                </div>
+                                <span class="font-weight-bold">Adquiere más información via correo electrónico</span>
+                            </div>
+                            {% csrf_token %}
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="form-wrap form-date form-devider"><span>Nombre</span>
+                                    <label class="form-label form-label-outside" for="rd-arrival-time"></label>
+                                    <input class="form-input" type="text" name="name" id="name"
+                                        placeholder="Escribe tu nombre">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="form-wrap form-date form-devider"><span>Email</span>
+                                    <label class="form-label form-label-outside" for="rd-departure-time"></label>
+                                    <input class="form-input" id="rd-departure-time" type="email" name="email"
+                                        placeholder="Escribe tu email">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="form-wrap form-date form-devider"><span>Teléfono</span>
+                                    <label class="form-label form-label-outside" for="rd-departure-time"></label>
+                                    <input class="form-input" id="rd-departure-time" type="tel" name="phone"
+                                        placeholder="Escribe tu teléfono">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12 align-self-center">
+                                <div class="form-wrap form-date">
+                                    <div class="form-btn-section">
+                                        <button type="submit"
+                                            class="button button-primary button-lg button-block">ENVIAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section section-sm bg-gray-light" id="about">
+            <div class="container">
+                <div class="row row-50 justify-content-xl-between align-items-lg-center">
+                    <div class="col-lg-6 text-md-left text-center">
+                        <div class="wow slideInLeft">
+                            <img src="{% static 'images/about.jpg' %}" class="img-fluid" width="483" height="327" alt="" style="border-radius: 7px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 wow-outer">
+                        <div class="wow slideInRight">
+                            <h3>¿Quienes somos?</h3>
+                            <p>Powur Energy es la primera empresa de energía solar virtual del mundo.
+                                Nuestra plataforma te permite trabajar donde quieras, cuando quieras y con el apoyo que
+                                necesitas para cumplir tus proyectos con calidad y rapidez líderes en la industria.</p>
+                            <p>
+                                El modelo de Powur le brinda total transparencia del costo de cada proyecto solar y la
+                                oportunidad de quedarse con la mayor parte de los ingresos netos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg bg-default" id="panels">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-9 col-lg-7 wow-outer">
+                        <div class="wow slideInDown">
+                            <h3>Paneles solares & su uso</h3>
+                            <p class="text-opacity-80">
+                                Los paneles solares tienen una amplia área de sectores dentro de la industria donde
+                                pueden ser utilizados para así aprovechar el funcionamiento y calidad que estos nos
+                                brindan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-50">
+                    <div class="col-md-6 col-lg-4 wow-outer">
+                        <div class="wow fadeInUp">
+                            <div class="team-minimal">
+                                <div class="team-minimal-figure"><img src="{% static 'images/panel1.jpg' %}" alt=""
+                                        width="370" height="395" /><a class="button button-primary"
+                                        href="https://powur.com/richiecolon/join">Más información</a>
+                                </div>
+                                <div class="team-minimal-caption">
+                                    <h4><a class="team-name" href="https://powur.com/richiecolon/join">Paneles para la
+                                            industria</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow-outer">
+                        <div class="wow fadeInUp">
+                            <div class="team-minimal">
+                                <div class="team-minimal-figure"><img src="{% static 'images/panel2.jpg' %}" alt=""
+                                        width="370" height="395" />
+                                    <a class="button button-primary" href="https://powur.com/richiecolon/join">Más
+                                        información</a>
+                                </div>
+                                <div class="team-minimal-caption">
+                                    <h4><a class="team-name" href="https://powur.com/richiecolon/join">Paneles para
+                                            satélites</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow-outer">
+                        <div class="wow fadeInUp">
+                            <div class="team-minimal">
+                                <div class="team-minimal-figure"><img src="{% static 'images/panel3.jpg' %}" alt=""
+                                        width="370" height="395" /><a class="button button-primary"
+                                        href="https://powur.com/richiecolon/join">Más información</a>
+                                </div>
+                                <div class="team-minimal-caption">
+                                    <h4><a class="team-name" href="https://powur.com/richiecolon/join">Paneles para el
+                                            hogar</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="gallery">
+            <div class="row isotope-wrap">
+                <!-- Isotope Content-->
+                <div class="col-lg-12">
+                    <h3 class="text-center">Nuestra galería</h3>
+                    <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery"
+                        data-lightgallery="group" data-lg-thumbnail="false">
+                        <div class="row no-gutters row-condensed" id="isotope">
+                            <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*"
+                                data-src="{% static 'images/gallery1.jpg' %}">
+                                <div class="wow slideInDown">
+                                    <div class="gallery-item-classic"><img src="{% static 'images/gallery1.jpg' %}"
+                                            alt="" width="960" height="429" />
+                                        <div class="gallery-item-classic-caption"><a
+                                                href="{% static 'images/gallery1.jpg' %}"
+                                                data-lightgallery="item">zoom</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3"
+                                data-src="{% static 'images/gallery2.jpg' %}">
+                                <div class="wow slideInDown">
+                                    <div class="gallery-item-classic"><img src="{% static 'images/gallery2.jpg' %}"
+                                            alt="" width="640" height="429" />
+                                        <div class="gallery-item-classic-caption"><a
+                                                href="{% static 'images/gallery2.jpg' %}"
+                                                data-lightgallery="item">zoom</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 isotope-item wow-outer" data-filter="Category 3"
+                                data-src="{% static 'images/gallery3.jpg' %}">
+                                <div class="wow slideInDown">
+                                    <div class="gallery-item-classic"><img src="{% static 'images/gallery3.jpg' %}"
+                                            alt="" width="640" height="429" />
+                                        <div class="gallery-item-classic-caption"><a
+                                                href="{% static 'images/gallery3.jpg' %}"
+                                                data-lightgallery="item">zoom</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3"
+                                data-src="{% static 'images/gallery4.jpg' %}">
+                                <div class="wow fadeInUp">
+                                    <div class="gallery-item-classic"><img src="{% static 'images/gallery4.jpg' %}"
+                                            alt="" width="960" height="429" />
+                                        <div class="gallery-item-classic-caption"><a
+                                                href="{% static 'images/gallery4.jpg' %}"
+                                                data-lightgallery="item">zoom</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3"
+                                data-src="{% static 'images/gallery5.jpg' %}">
+                                <div class="wow fadeInUp">
+                                    <div class="gallery-item-classic"><img src="{% static 'images/gallery5.jpg' %}"
+                                            alt="" width="960" height="429" />
+                                        <div class="gallery-item-classic-caption"><a
+                                                href="{% static 'images/gallery5.jpg' %}"
+                                                data-lightgallery="item">zoom</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section parallax-container" data-parallax-img="{% static 'images/parallax1.jpg' %}">
+            <div class="parallax-content section-xl context-dark text-center bg-dark-filter">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-10 wow-outer">
+                            <div class="wow fadeInUp">
+                                <h3 class="font-family-serif font-weight-medium">Pide una cotización ahora mismo
+                                </h3><a class="button button-lg button-primary offset-top-60"
+                                    href="https://powur.com/richiecolon/join">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Footer-->
+        <footer class="section footer-minimal context-dark">
+            <div class="container wow-outer">
+                <div class="wow fadeIn">
+                    <div class="row row-50">
+                        <div class="col-12"><a href="index.html"><img
+                                    src="{% static 'images/logo-inverse-138-59.png' %}" alt="" /></a>
+                        </div>
+                        <div class="col-12">
+                            <ul class="footer-minimal-nav">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">Sobre nosotros</a></li>
+                                <li><a href="#panels">Paneles</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="rights"><span>&copy;&nbsp;</span><span
+                        class="copyright-year"></span><span>&nbsp;</span><span>Powur Energy</span><span>.&nbsp;</span>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{% static 'js/picturefill.min.js' %}"></script>
+    <script src="{% static 'js/lightgallery-all.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
+    <script src="{% static 'js/core.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        $(document).ready(() => {
+            // Show message on the form
+            if ($('#message-form')) {
+                var position = $('#message-form').offset().top
+                $(window).scrollTop(position - 150)
+            }
+        })
+    </script>
+</body>
+
+</html>
